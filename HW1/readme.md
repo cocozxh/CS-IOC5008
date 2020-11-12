@@ -24,8 +24,8 @@ Code for homework 1 in the Selected Topics in Visual Recognition using Deep Lear
 ### Dataset
   - [Link](https://www.kaggle.com/c/cs-t0828-2020-hw1/data)
 ### Requirements
-- Python >= 3.7
-- PyTorch >= 1.4.0
+- Python >= 3.6
+- PyTorch >= 1.3.0
 ### Pretrained model
   -  [Link](https://baidu.com/) 
 
