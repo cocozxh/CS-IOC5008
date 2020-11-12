@@ -24,7 +24,7 @@ I choose the ResNet-50 as my backbone network and apply the transfer learning to
 - Python >= 3.6
 - PyTorch >= 1.3.0
 ### Pretrained model
-  -  [Link](https://baidu.com/) 
+  -  [Link](https://pan.baidu.com/s/1zh3FFwW14lPhSRfmGRshBA) 密码: rs1h
 
 ## Dataset preparation
 After downloading the image data, the data directory is structured as:
