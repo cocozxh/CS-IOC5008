@@ -15,9 +15,6 @@ Code for homework 1 in the Selected Topics in Visual Recognition using Deep Lear
   - [Train](#train)
     - [Data augmentation](#data-augmentation)
     - [Train model](#train-model)
-  - [Train](#train)
-    - [Data augmentation](#data-augmentation)
-    - [Train model](#train-model)
   - [Test](#test)
 
 ## Installation
