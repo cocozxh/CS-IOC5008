@@ -82,7 +82,7 @@ The pretrained model on the ImageNet is loaded. The expected training times are:
 Model | GPUs | Image size | Training Epochs | Training Time | Testing accuracy
 ------------ | ------------- | ------------- | ------------- | ------------- | -------------
 resnet50 | 1x TitanXp | 448 | 60 | 3.5 hours | 93.24%
-resnet50 | 1x TitanXp | 224 | 60 | 1.1 hours | 97.38%
+resnet50 | 1x TitanXp | 224 | 60 | 1.1 hours | 87.38%
 resnet50 | 1x TitanXp | 32 | 210 | 3.2 hours | ～10%
 
 ## Test
