@@ -15,6 +15,10 @@ Code for homework 1 in the Selected Topics in Visual Recognition using Deep Lear
   - [Train](#train)
     - [Data augmentation](#data-augmentation)
     - [Train model](#train-model)
+  - [Train](#train)
+    - [Data augmentation](#data-augmentation)
+    - [Train model](#train-model)
+  - [Test](#test)
 
 ## Installation
 ### Dataset
@@ -78,3 +82,8 @@ resnet50 | 1x TitanXp | 448 | 60 | 3.5 hours
 resnet50 | 1x TitanXp | 224 | 60 | 1.1 hours
 resnet50 | 1x TitanXp | 32 | 210 | 3.2 hours
 
+## Test
+Run following commands to generate the submission.csv file of the testing results.
+```
+$ python test.py
+```
