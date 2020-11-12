@@ -34,7 +34,7 @@ data
   |    |  +- 000005.jpg
   +- training_labels.csv
 ```
-All categories of training data are in one directory, so we should prepare the training data using [daataset.py](). Then the training data directory is structured as:
+All categories of training data are in one directory, so we should prepare the training data using [daataset.py](https://github.com/cocozxh/CS-IOC5008/blob/main/HW1/dataset.py). Then the training data directory is structured as:
 ```
 training data
   +- Acura Integra Type R 2001
