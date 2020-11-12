@@ -32,14 +32,14 @@ After downloading the image data, the data directory is structured as:
 data
   +- training data
   |  +- training data
-  |    |  +- 000001.jpg
-  |    |  +- 000002.jpg
-  |    |  ...
+  |  |  +- 000001.jpg
+  |  |  +- 000002.jpg
+  |  |  ...
   +- testing data
   |  +- testing data
-  |    |  +- 000004.jpg
-  |    |  +- 000005.jpg
-  |    |  ...
+  |  |  +- 000004.jpg
+  |  |  +- 000005.jpg
+  |  |  ...
   +- training_labels.csv
 ```
 ### Training data
