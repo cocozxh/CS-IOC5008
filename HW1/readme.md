@@ -1,7 +1,7 @@
 # Fine-Grained Car Image Classification
 
 Code for homework 1 in the Selected Topics in Visual Recognition using Deep Learning.
-
+I choose the ResNet-50 as my backbone network and apply the transfer learning to speed up the training process.
 ## Catalog
 - [Fine-Grained Car Image Classification](#fine-grained-car-image-classification)
   - [Catalog](#Catalog)
