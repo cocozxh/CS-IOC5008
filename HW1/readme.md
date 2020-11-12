@@ -77,7 +77,7 @@ To train models, run following commands.
 ```
 $ python train.py --pre_train --rotation --resize 448 --epoch 60
 ```
-The model loads the pretrained model on the ImageNet. The expected training times are:
+The pretrained model on the ImageNet is loaded. The expected training times are:
 
 Model | GPUs | Image size | Training Epochs | Training Time
 ------------ | ------------- | ------------- | ------------- | -------------
