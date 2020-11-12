@@ -77,8 +77,8 @@ print('Initialize the model')
 model0 = models.resnet50(pretrained=False)
 num_ftrs = model0.fc.in_features
 model0.fc = nn.Linear(num_ftrs, 196)
-model_hw1 = model0.to(device)
-model_hw1.load_state_dict(torch.load('net_059.pth'))
+net_hw1 = model0.to(device)
+net_hw1.load_state_dict(torch.load('net_059.pth'))
 
 print('*' * 50)
 print("Waiting Test!")
@@ -90,11 +90,11 @@ with open(csv_path, 'w', newline='') as file:
 # test
 with open(csv_path, 'a', newline='') as file:
     with torch.no_grad():
-        model_hw1.eval()
+        net_hw1.eval()
         for data in test_loader:
             images, ids = data
             images = images.to(device)
-            outputs = model_hw1(images)
+            outputs = net_hw1(images)
             _, predicted = torch.max(outputs.data, 1)
             for i in range(predicted.shape[0]):
                 predict = int(predicted[i])
