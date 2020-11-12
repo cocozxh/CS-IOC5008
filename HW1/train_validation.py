@@ -1,4 +1,3 @@
-
 import os
 import time
 import random
@@ -30,12 +29,13 @@ for k in range(num):
 
     for name in name_label_val:
         if os.path.exists(path_val + file_name):
-            os.rename(path_train+file_name+'/'+name, path_val+file_name+'/'+name)
+            os.rename(path_train+file_name+'/'+name,
+                      path_val+file_name+'/'+name)
         else:
             os.makedirs(path_val + file_name)
-            os.rename(path_train+file_name+'/'+name, path_val+file_name+'/'+name)
+            os.rename(path_train+file_name+'/'+name,
+                      path_val+file_name+'/'+name)
     print('%s处理完毕!' % file_name)
 
 time_end = time.time()
 print('完毕, 耗时%s!!' % (time_end - time_start))
-
