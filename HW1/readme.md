@@ -12,6 +12,7 @@ Code for homework 1 in the Selected Topics in Visual Recognition using Deep Lear
   - [Dataset preparation](#Dataset-Preparation)
     - [Training data](#training-data)
     - [Split dataset](#split-dataset)
+  - [Train](#train)
 
 ## Installation
 ### Dataset
@@ -37,7 +38,11 @@ data
   +- training_labels.csv
 ```
 ### Training data
-All categories of training data are in one directory, so we should prepare the training data using [dataset.py](https://github.com/cocozxh/CS-IOC5008/blob/main/HW1/dataset.py). Then the training data directory is structured as:
+All categories of training data are in one directory, so we should prepare the training data. 
+```
+$ python dataset.py
+```
+Then the training data directory is structured as:
 ```
 training data
   +- Acura Integra Type R 2001
@@ -51,5 +56,9 @@ training data
   |  +- 000155.jpg
 ```
 ### Split dataset
-I randomly sample 10% data from each class of training data to construct the validation set using [train_validation.py](https://github.com/cocozxh/CS-IOC5008/blob/main/HW1/train_validation.py)
+I randomly sample 10% data from each class of training data to construct the validation set.
+```
+$ python train_validation.py
+```
+
 
