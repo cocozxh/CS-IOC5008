@@ -1,13 +1,10 @@
-
 import os
 import shutil
-import numpy as np
 import pandas as pd
 import time
 
 time_start = time.time()
 
-# 文件路径
 path = 'data/'
 path_images = path + 'training_data/training_data/'
 train_save_path = path + 'train/'
@@ -30,7 +27,7 @@ for k in range(num):
     file_name = images[k]
     id = int(file_name.split('.')[0])
     label = 'a'
-    for i in range(len(id_label)): # 找到类别
+    for i in range(len(id_label)):  # 找到类别
         if id_label[i][0] == id:
             print('yes')
             label = id_label[i][1]
@@ -39,12 +36,13 @@ for k in range(num):
             break
 
     if os.path.exists(train_save_path + label):
-        shutil.copy(path_images + file_name, train_save_path+label+'/'+file_name)
+        shutil.copy(path_images + file_name,
+                    train_save_path+label+'/'+file_name)
     else:
         os.makedirs(train_save_path+label)
-        shutil.copy(path_images + file_name, train_save_path+label+'/'+file_name)
+        shutil.copy(path_images + file_name,
+                    train_save_path+label+'/'+file_name)
     print('%s处理完毕!' % file_name)
 
 time_end = time.time()
 print('完毕, 耗时%s!!' % (time_end - time_start))
-
