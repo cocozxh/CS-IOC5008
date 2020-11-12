@@ -13,6 +13,8 @@ Code for homework 1 in the Selected Topics in Visual Recognition using Deep Lear
     - [Training data](#training-data)
     - [Split dataset](#split-dataset)
   - [Train](#train)
+    - [Data augmentation](#data-augmentation)
+    - [Train model](#train-model)
 
 ## Installation
 ### Dataset
@@ -63,9 +65,16 @@ $ python train_validation.py
 ## Train
 ### Data augmentation
 The best solution I found resizes the image to (448, 448) with RandomRotation, RandomHorizontalFlip and Normalize((0.4705, 0.4597, 0.4545), (0.2648, 0.2644, 0.2734)).
-### Train models
+### Train model
 To train models, run following commands.
 ```
 $ python train.py --pre_train --rotation --resize 448 --epoch 60
 ```
+The model load the pretrained model on the ImageNet. The expected training times are:
+
+Model | GPUs | Image size | Training Epochs | Training Time
+------------ | ------------- | ------------- | ------------- | -------------
+resnet50 | 1x TitanXp | 448 | 60 | 3.5 hours
+resnet50 | 1x TitanXp | 224 | 60 | 1.1 hours
+resnet50 | 1x TitanXp | 32 | 210 | 3.2 hours
 
