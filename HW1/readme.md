@@ -71,7 +71,7 @@ $ python train_validation.py
 ```
 ## Train
 ### Data augmentation
-The best solution I found resizes the image to (448, 448) with RandomRotation, RandomHorizontalFlip and Normalize((0.4705, 0.4597, 0.4545), (0.2648, 0.2644, 0.2734)).
+The best solution I found resizes the image to (448, 448) with RandomRotation, RandomHorizontalFlip and Normalization (mean=(0.4705, 0.4597, 0.4545), std=(0.2648, 0.2644, 0.2734)).
 ### Train model
 To train models, run following commands.
 ```
