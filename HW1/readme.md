@@ -37,10 +37,12 @@ data
   |  +- training data
   |    |  +- 000001.jpg
   |    |  +- 000002.jpg
+  |    |  ...
   +- testing data
   |  +- testing data
   |    |  +- 000004.jpg
   |    |  +- 000005.jpg
+  |    |  ...
   +- training_labels.csv
 ```
 ### Training data
@@ -52,14 +54,18 @@ Then the training data directory is structured as:
 ```
 training data
   +- Acura Integra Type R 2001
-  |  +- 000406.jpgra
+  |  +- 000406.jpg
   |  +- 000408.jpg
+  |  +- ...
   +- Acura RL Sedan 2012
   |  +- 000091.jpg
   |  +- 000092.jpg
+  |  +- ...
   +- Acura TL Sedan 2012
   |  +- 000154.jpg
   |  +- 000155.jpg
+  |  +- ...
+  |  ...
 ```
 ### Split dataset
 I randomly sample 10% data from each class of training data to construct the validation set.
