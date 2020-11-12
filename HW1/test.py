@@ -99,7 +99,7 @@ model_for_hw1.load_state_dict(torch.load('net_059.pth'))
 
 print('*'*50)
 print("Waiting Test!")
-csv_path = '/output/result_resnet50_best.csv'
+csv_path = '/output/submission.csv'
 with open(csv_path, 'w', newline='') as file:
     csvwriter = csv.writer(file)
     csvwriter.writerow(['id','label'])
