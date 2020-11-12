@@ -14,6 +14,7 @@ labels = os.listdir(path_train)
 if '.DS_Store' in labels:
     labels.remove('.DS_Store')
 
+# validation set
 p = 0.1
 
 # 划分
