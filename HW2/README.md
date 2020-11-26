@@ -17,12 +17,16 @@ I choose the Yolo-v4 as my backbone network and apply the transfer learning to s
 
 ## Installation
 ### Dataset
+The dataset for this homework is here:
   - [Link](https://drive.google.com/drive/u/1/folders/1Ob5oT9Lcmz7g5mVOcYH3QugA7tV3WsSl)
 ### Requirements
 - Python >= 3.6
 - PyTorch >= 1.3.0
 ### Pretrained model
-  -  [Link](https://pan.baidu.com/s/1TO-wO79aJyK5c_OSGPKS-A) password: r2zi
+The final model I traiined is here:
+  -  [Final Model](https://pan.baidu.com/s/1TO-wO79aJyK5c_OSGPKS-A) password: r2zi
+The COCO pretain weight is here:
+  -  [COCO Weight](https://pan.baidu.com/s/1n_9pSC2kZiuMiCq7EMQdRQ) password: tkze
 
 ## Dataset preparation
 Create a TXT document with each line containing the address, bbox and label of each image.
