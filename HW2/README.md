@@ -10,82 +10,39 @@ I choose the Yolo-v4 as my backbone network and apply the transfer learning to s
     - [Requirements](#Requirements)
     - [Pretrained model](#Pretrained-model)
   - [Dataset preparation](#Dataset-Preparation)
-    - [Training data](#training-data)
   - [Train](#train)
-    - [Data augmentation](#data-augmentation)
+    - [Data pre-process](#data-pre-process)
     - [Train model](#train-model)
   - [Test](#test)
 
 ## Installation
 ### Dataset
-  - [Link](https://www.kaggle.com/c/cs-t0828-2020-hw1/data)
+  - [Link](https://drive.google.com/drive/u/1/folders/1Ob5oT9Lcmz7g5mVOcYH3QugA7tV3WsSl)
 ### Requirements
 - Python >= 3.6
 - PyTorch >= 1.3.0
 ### Pretrained model
-  -  [Link](https://pan.baidu.com/s/1zh3FFwW14lPhSRfmGRshBA) password: rs1h
+  -  [Link](https://pan.baidu.com/s/1TO-wO79aJyK5c_OSGPKS-A) password: r2zi
 
 ## Dataset preparation
-After downloading the image data, the data directory is structured as:
-```
-data
-  +- training data
-  |  +- training data
-  |  |  +- 000001.jpg
-  |  |  +- 000002.jpg
-  |  |  ...
-  +- testing data
-  |  +- testing data
-  |  |  +- 000004.jpg
-  |  |  +- 000005.jpg
-  |  |  ...
-  +- training_labels.csv
-```
-### Training data
-All categories of training data are in one directory, so we should prepare the training data. 
-```
-$ python dataset.py
-```
-Then the training data directory is structured as:
-```
-training data
-  +- Acura Integra Type R 2001
-  |  +- 000406.jpg
-  |  +- 000408.jpg
-  |  +- ...
-  +- Acura RL Sedan 2012
-  |  +- 000091.jpg
-  |  +- 000092.jpg
-  |  +- ...
-  +- Acura TL Sedan 2012
-  |  +- 000154.jpg
-  |  +- 000155.jpg
-  |  +- ...
-  |  ...
-```
-### Split dataset
-I randomly sample 10% data from each class of training data to construct the validation set.
-```
-$ python train_validation.py
-```
+Create a TXT document with each line containing the address, bbox and label of each image.
+
 ## Train
-### Data augmentation
-The best solution I found resizes the image to (448, 448) with RandomRotation, RandomHorizontalFlip and Normalization (mean=(0.4705, 0.4597, 0.4545), std=(0.2648, 0.2644, 0.2734)).
+### Data pre-process
+Firstly, resize the image to (416, 416).
 ### Train model
 To train models, run following commands.
 ```
-$ python train.py --pre_train --rotation --resize 448 --epoch 60
+$ python train.py
 ```
-The pretrained model on the ImageNet is loaded. The expected training times are:
+The pretrained model on the COCO is loaded. 
+We first freeze the parameters of backbone to train 25 epochs, and then unfreeze the parameters of backbone for the training of another 25 epochs.
 
-Model | GPUs | Image size | Training Epochs | Training Time | Testing accuracy
------------- | ------------- | ------------- | ------------- | ------------- | -------------
-resnet50 | 1x TitanXp | 448 | 60 | 3.5 hours | 93.24%
-resnet50 | 1x TitanXp | 224 | 60 | 1.1 hours | 87.38%
-resnet50 | 1x TitanXp | 32 | 210 | 3.2 hours | ～10%
+Note that all hyper parameters are set done in the train.py.
+If you want to change, JUST DO IT!!
 
 ## Test
-Run following commands to generate the submission.csv file of the testing results.
+Run following commands to generate the submission.json file of the testing results.
 ```
 $ python test.py
 ```
