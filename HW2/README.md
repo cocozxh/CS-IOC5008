@@ -55,4 +55,4 @@ $ python test.py
 
 ## Speed
 The speed of YOLOv4 I test on the [Google Colab](https://colab.research.google.com) is as follows.
-
+![here](https://raw.githubusercontent.com/cocozxh/CS-IOC5008/main/HW2/speed0.png)
