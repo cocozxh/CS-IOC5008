@@ -209,9 +209,9 @@ torch.save(best_model_weights, '/output/yolov4_maskdetect_weights0.pth')
 #   解冻backbone后训练
 # ------------------------------------#
 lr = 1e-4
-Batch_size = 4
-Freeze_Epoch = 42
-Unfreeze_Epoch = 60
+Batch_size = 2
+Freeze_Epoch = 25
+Unfreeze_Epoch = 50
 Use_Data_Loader = True
 
 optimizer = optim.Adam(model.parameters(), lr, weight_decay=5e-4)
