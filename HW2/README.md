@@ -1,9 +1,9 @@
-# Digit
+# Digit Detection
 
 Code for homework 2 in the Selected Topics in Visual Recognition using Deep Learning.
 I choose the Yolo-v4 as my backbone network and apply the transfer learning to speed up the training process.
 ## Catalog
-- [Fine-Grained Car Image Classification](#fine-grained-car-image-classification)
+- [Digit Detection](#digit-detection)
   - [Catalog](#Catalog)
   - [Installation](#Installation)
     - [Dataset](#Dataset)
@@ -11,7 +11,6 @@ I choose the Yolo-v4 as my backbone network and apply the transfer learning to s
     - [Pretrained model](#Pretrained-model)
   - [Dataset preparation](#Dataset-Preparation)
     - [Training data](#training-data)
-    - [Split dataset](#split-dataset)
   - [Train](#train)
     - [Data augmentation](#data-augmentation)
     - [Train model](#train-model)
