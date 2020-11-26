@@ -14,6 +14,7 @@ I choose the Yolo-v4 as my backbone network and apply the transfer learning to s
     - [Data pre-process](#data-pre-process)
     - [Train model](#train-model)
   - [Test](#test)
+  - [Speed](#speed)
 
 ## Installation
 ### Dataset
@@ -51,3 +52,7 @@ Run following commands to generate the submission.json file of the testing resul
 ```
 $ python test.py
 ```
+
+## Speed
+The speed of YOLOv4 I test on the [Google Colab](https://colab.research.google.com) is as follows.
+
