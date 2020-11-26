@@ -205,8 +205,6 @@ time_start = time.time()
 predictions = detect_images()
 print(len(predictions))
 for i in range(len(predictions)):
-    if i % 3000 == 0:
-        print(i)
     predictions[i]['label'] = [10 if j == 0 else j for j in predictions[i]['label']]
 time_end = time.time()
 print('total time', time_end - time_start)
@@ -223,9 +221,6 @@ class NpEncoder(json.JSONEncoder):
         else:
             return super(NpEncoder, self).default(obj)
 
-
-for i in range(len(predictions)):
-    predictions[i]['label'] = [10 if j == 0 else j for j in predictions[i]['label']]
 
 with open('/output/2040.json', 'w') as file_obj:
     json.dump(predictions, file_obj, cls=NpEncoder)
