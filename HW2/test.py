@@ -223,6 +223,7 @@ class NpEncoder(json.JSONEncoder):
         else:
             return super(NpEncoder, self).default(obj)
 
+
 for i in range(len(predictions)):
     predictions[i]['label'] = [10 if j == 0 else j for j in predictions[i]['label']]
 
