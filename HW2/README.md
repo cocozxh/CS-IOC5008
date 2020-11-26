@@ -1,7 +1,7 @@
 # Digit Detection
 
 Code for homework 2 in the Selected Topics in Visual Recognition using Deep Learning.
-I choose the Yolo-v4 as my backbone network and apply the transfer learning to speed up the training process.
+I choose the YOLOv4 as my network and apply the transfer learning to speed up the training process.
 ## Catalog
 - [Digit Detection](#digit-detection)
   - [Catalog](#Catalog)
