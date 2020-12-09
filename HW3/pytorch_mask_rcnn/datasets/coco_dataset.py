@@ -14,13 +14,10 @@ class COCODataset(GeneralizedDataset):
         self.split = split
         self.train = train
         
-#         ann_file = os.path.join(data_dir, "{}.json".format(split))
         if train:
-#             ann_file = '/data/zihaosh/hw3/pascal_train.json'
-            ann_file = '/data/zihaosh/data_hw3/train.json'
+            ann_file = '/data/zihaosh/data_hw3/pascal_train.json'
         else:
-#             ann_file = '/data/zihaosh/hw3/test.json'
-            ann_file = '/data/zihaosh/data_hw3/val.json'
+            ann_file = '/data/zihaosh/hw3/test.json'
         print(ann_file)
         self.coco = COCO(ann_file)
         self.ids = [str(k) for k in self.coco.imgs]
