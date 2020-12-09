@@ -9,7 +9,6 @@ I choose the Mask R-CNN as my network and apply the transfer learning to speed u
     - [Dataset](#Dataset)
     - [Requirements](#Requirements)
     - [Pretrained model](#Pretrained-model)
-  - [Dataset preparation](#Dataset-Preparation)
   - [Train](#train)
     - [Train model](#train-model)
   - [Test](#test)
@@ -25,8 +24,6 @@ The dataset for this homework is here:
 The final model I traiined is here:
   -  [Final Model](https://pan.baidu.com/s/1TO-wO79aJyK5c_OSGPKS-A) password: r2zi
 
-## Dataset preparation
-Create a TXT document with each line containing the address, bbox and label of each image.
 
 ## Train
 ### Train model
