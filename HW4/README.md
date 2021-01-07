@@ -22,8 +22,7 @@ The dataset for this homework is here:
 - PyTorch >= 1.3.0
 ### Pretrained model
 The final model I traiined is here:
-  -  [Final Model](https://pan.baidu.com/s/184g9QWYgCMAeid_zHmdB4g) extraction code: orwy
-
+  -  [Final Model](https://pan.baidu.com/s/1x-qbwFJHdyOkUV7riaTchw) extraction code: fvvs
 
 ## Train
 ### Train model
